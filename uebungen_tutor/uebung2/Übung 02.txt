@@ -1,0 +1,127 @@
+*********
+* Teil 01
+*********
+
+* Erstelle ein neues Projekt mit dem Namen "uebung02", als Kopie von "uebung01".
+
+* Ersetze die Funktionskomponente "Main.jsx" durch eine Klassenkomponente mit demselben Namen und derselben Funktionalität.
+
+
+
+*********
+* Teil 02
+*********
+
+* Ersetze die Eigenschaften "books" und "audio" durch die Eigenschaft "products", mit folgendem Inhalt:
+
+*********
+    [
+        {
+            'name': 'Bücher',
+            'items': [
+                {
+                    'Autor': 'Stephen King',
+                    'Titel': 'Carrie',
+                    'Jahr': 1974,
+                    'Seiten': 199,
+                    'Verlag': 'Doubleday'
+                },
+                {
+                    'Autor': 'Stephen King',
+                    'Titel': 'The Shining',
+                    'Jahr': 1977,
+                    'Seiten': 447,
+                    'Verlag': 'Doubleday'
+                },
+                {
+                    'Autor': 'Stephen King',
+                    'Titel': 'Christine',
+                    'Jahr': 1983,
+                    'Seiten': 526,
+                    'Verlag': 'Viking'
+                },
+                {
+                    'Autor': 'Stephen King',
+                    'Titel': 'It',
+                    'Jahr': 1986,
+                    'Seiten': 1138,
+                    'Verlag': 'Viking'
+                },
+                {
+                    'Autor': 'Stephen King',
+                    'Titel': 'Misery',
+                    'Jahr': 1987,
+                    'Seiten': 310,
+                    'Verlag': 'Viking'
+                },
+                {
+                    'Autor': 'Stephen King',
+                    'Titel': 'Joyland',
+                    'Jahr': 2013,
+                    'Seiten': 288,
+                    'Verlag': 'Hard Case Crime'
+                }
+            ]
+        },
+        {
+            'name': 'Audio-Books',
+            'items': [
+                {
+                    'Autor': 'Stephen King',
+                    'Titel': 'On Writing: A Memoir of the Craft ',
+                    'Jahr': 2000,
+                    'Länge': 120,
+                    'Verlag': 'Simon & Schuster Audio'
+                },
+                {
+                    'Autor': 'Stephen King',
+                    'Titel': 'Salem\'s Lot (introduction)',
+                    'Jahr': 2004,
+                    'Länge': 180,
+                    'Verlag': 'Simon & Schuster Audio'
+                },
+                {
+                    'Autor': 'Stephen King',
+                    'Titel': 'Bag of Bones',
+                    'Jahr': 2005,
+                    'Länge': 240,
+                    'Verlag': 'Simon & Schuster Audio'
+                }
+            ]
+        }
+    ]
+*********
+
+* Basierend auf der neuen Datenstruktur soll nun nur noch jeweils die Tabelle der Bücher oder der Audio-Books angezeigt werden!
+
+* Füge im JSX folgendes Element hinzu (vor der Überschrift):
+
+*********
+<button>Produktkategorie wechseln</button>
+*********
+
+* Erzeuge eine Methode, die beim Klick auf diesen Button ausgeführt wird. Diese Funktion schaltet zwischen der Tabelle der Bücher und der der Audio-Books um.
+
+
+
+*********
+* Teil 03
+*********
+
+* Erzeuge in der "Main.jsx" einen State für den Warenkorb, als Array.
+
+* Füge in der existierenden Tabelle eine Spalte hinzu. Das jeweilige TD enthält den Text "In den Warenkorb" und bekommt die Klasse "button".
+
+* Beim Klick auf eines dieser TD's soll eine Funktion in der "Main.jsx" ausgeführt werden, die das gewählte "Produkt"-Objekt dem Warenkorb-Array hinzufügt.
+
+* In der "Main.jsx" lasse den Warenkorb als Tabelle (unter der Produkt-Tabelle) anzeigen, falls der Warenkorb nicht leer ist. Es genügt, dort Produkt-Autor und -Titel anzuzeigen.
+
+
+
+*********
+* Teil 04
+*********
+
+* Füge der Warenkorb-Tabelle eine Spalte hinzu. Das jeweilige TD enthält den Text "Entfernen" und bekommt die Klasse "button".
+
+* Beim Klick auf eines dieser TD's soll eine zusätzliche Methode ausgeführt werden, die das gewählte Produkt aus dem Warenkorb entfernt.
