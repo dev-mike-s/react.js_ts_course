@@ -2,9 +2,31 @@ import Table from "./Table"
 /* import TableAudio from "./TableAudio"
 import TableBooks from "./TableBooks" */
 
+/* type ProductType = {
+            'Autor': string,
+            'Titel': string,
+            'Jahr': number,
+            'Verlag': string,
+            'Seiten'?: number,
+            'Länge'?: number
+} */
+
+type ProductType = {
+            'Autor': string,
+            'Titel': string,
+            'Jahr': number,
+            'Verlag': string
+}
+export type BookType = ProductType & {
+            'Seiten': number
+}
+export type AudioType = ProductType & {
+            'Länge': number
+}
+
 function Main() {
 
-    const BOOKS = [
+    const BOOKS: BookType[] = [
         {
             'Autor': 'Stephen King',
             'Titel': 'Carrie',
@@ -49,7 +71,7 @@ function Main() {
         }
     ]
 
-    const AUDIO = [
+    const AUDIO: AudioType[] = [
         {
             'Autor': 'Stephen King',
             'Titel': 'On Writing: A Memoir of the Craft ',

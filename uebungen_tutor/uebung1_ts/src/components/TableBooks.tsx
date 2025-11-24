@@ -1,6 +1,11 @@
 import TableRowBook from "./TableRowBook"
+import type { BookType } from "./Main"
 
-function TableBooks(props) {
+type Props = {
+    data: BookType[]
+}
+
+function TableBooks(props: Props) {
 
     /* 
     props:

@@ -1,5 +1,11 @@
+import type { BookType } from "./Main"
 
-function TableRowBook(props) {
+type Props = {
+    book: BookType,
+    i: number
+}
+
+function TableRowBook(props: Props) {
 
     /* 
     props:

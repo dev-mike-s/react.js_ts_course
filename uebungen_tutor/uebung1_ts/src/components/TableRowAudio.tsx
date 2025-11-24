@@ -1,5 +1,11 @@
+import type { AudioType } from "./Main"
 
-function TableRowAudio(props) {
+type Props = {
+    audio: AudioType,
+    i: number
+}
+
+function TableRowAudio(props: Props) {
 
     /* 
     props:
