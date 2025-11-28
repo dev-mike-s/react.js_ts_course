@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "@vitejs/plugin-react": "^5.1.1",
+    "axios": "^1.13.2",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-router": "^7.9.6"
@@ -27,6 +28,7 @@
     "uebung2": "cross-env VITE_APP_ROOT=mike_uebungen/uebung_2 npx vite --config vite.shared.js",
     "uebung3": "cross-env VITE_APP_ROOT=mike_uebungen/uebung_3 npx vite --config vite.shared.js",
     "uebung4": "cross-env VITE_APP_ROOT=mike_uebungen/uebung_4 npx vite --config vite.shared.js",
-    "uebung5": "cross-env VITE_APP_ROOT=mike_uebungen/uebung_5 npx vite --config vite.shared.js"
+    "uebung5": "cross-env VITE_APP_ROOT=mike_uebungen/uebung_5 npx vite --config vite.shared.js",
+    "uebung6": "cross-env VITE_APP_ROOT=mike_uebungen/uebung_6 npx vite --config vite.shared.js"
   }
 }

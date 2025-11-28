@@ -1,0 +1,158 @@
+*********
+* Teil 01
+*********
+
+* Erstelle ein neues Projekt mit dem Namen "uebung6".
+
+* In "App.jsx" ersetze den Rückgabewert durch:
+
+*********
+    <>
+      <form>
+        <h3></h3>
+        <input type="text" placeholder="Titel" name="titel" />
+        <input type="text" placeholder="Jahr" name="jahr" />
+        <input type="text" placeholder="Publisher" name="publisher" />
+        <input type="text" placeholder="Preis" name="preis" />
+        <button></button>
+      </form>
+      <table>
+        <thead>
+          <tr>
+              <th>Titel</th>
+              <th>Jahr</th>
+              <th>Publisher</th>
+              <th>Preis</th>
+              <th></th>
+              <th></th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </>
+*********
+
+* In "App.css" ersetze den existierenden Inhalt durch:
+
+*********
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  width: 95%;
+  color: #122240;
+  margin: 0 auto
+}
+form input, form button {
+  display: block;
+  margin: 5px 0
+}
+button {
+  border: 1px solid#284c94;
+  background-color: #dce5f5;
+}
+
+table {
+  text-align: left;
+  border: 1px solid#284c94;
+  border-collapse: collapse
+}
+td, th {
+  border: 1px solid#284c94;
+  border-collapse: collapse;
+  padding: 8px 16px
+}
+th {
+  background-color: #dce5f5;
+}
+td:last-child, td:nth-last-child(2), button {
+  cursor: pointer
+}
+*********
+
+* Erzeuge eine JSON-Datei, die folgende Daten enthält:
+
+*********
+{
+  "spiele": [
+    {
+      "id": "1",
+      "titel": "Donkey Kong",
+      "jahr": 1981,
+      "publisher": "Nintendo",
+      "preis": 99.99
+    },
+    {
+      "id": "2",
+      "titel": "Pac-Man",
+      "jahr": 1980,
+      "publisher": "Namco",
+      "preis": 99.99
+    },
+    {
+      "id": "3",
+      "titel": "Asteroids",
+      "jahr": 1979,
+      "publisher": "Atari",
+      "preis": 99.99
+    },
+    {
+      "id": "4",
+      "titel": "Space Invaders",
+      "jahr": 1978,
+      "publisher": "Taito",
+      "preis": 99.99
+    },
+    {
+      "id": "5",
+      "titel": "Pong",
+      "jahr": 1972,
+      "publisher": "Atari",
+      "preis": 99.99
+    }
+  ]
+}
+*********	
+
+
+*********
+* Teil 02
+*********
+
+* Lade das Array in "spiele" aus der JSON-Datei anfänglich
+und speichere es in einem State.
+* Fülle die Tabelle mit den Daten aus diesem State.
+
+
+
+*********
+* Teil 03
+*********
+
+* In der letzten Spalte der Tabelle soll der Text "Löschen" stehen.
+* Beim Klick auf den jeweiligen "Button" soll der entsprechende Eintrag aus der JSON-Datei gelöscht und der lokale State upgedatet werden.
+
+
+
+*********
+* Teil 04
+*********
+
+* Mit dem Formular kann man einen neuen Eintrag erstellen.
+* Dieser Eintrag soll in der JSON-Datei gespeichert und
+der lokale State upgedatet werden.
+
+
+
+*********
+* Teil 05
+*********
+
+* Dasselbe Formular ist außerdem dazu da, um einen bestehenden Eintrag zu bearbeiten. Der User kann zwischen "Hinzufügen"- und "Bearbeiten"-Modi wechseln, indem in der jeweiligen Zeile auf das vorletzte TD geklickt wird.
+* Dieses TD soll, je nach Modus, '"Bearbeiten" aktivieren' oder '"Bearbeiten" deaktivieren' anzeigen.
+* Je nach Modus soll auch der Text in der H3 zwischen 
+"Neuer Artikel" und "Artikel bearbeiten" wechseln.
+* Außerdem soll, je nach Modus, auch der Text im BUTTON zwischen "Hinzufügen" und "Bearbeiten" wechseln.
+
+* Im "Bearbeiten"-Modus soll beim Klick auf den Button der
+entsprechende Eintrag in der JSON-Datei aktualisiert und
+der lokale State upgedatet werden.

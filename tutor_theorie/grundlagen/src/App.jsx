@@ -4,9 +4,14 @@ import Beispiel2 from './components/css-modules/Beispiel2'
 import EventsFunktion from './components/events/EventsFunktion'
 import EventsKlasse from './components/events/EventsKlasse'
 import Formular from './components/forms/Formular'
+import LebenszyklusFunktion from './components/lifecycle/LebenszyklusFunktion'
+import LebenszyklusKlasse from './components/lifecycle/LebenszyklusKlasse'
 import Listen from './components/lists/Listen'
 import PropsElter from './components/methodsprops/PropsElter'
 import Properties from './components/props/Properties'
+import RefFunktion from './components/ref/RefFunktion'
+import RefFunktionPersistent from './components/ref/RefFunktionPersistent'
+import RefKlasse from './components/ref/RefKlasse'
 import StateFunktion from './components/state/StateFunktion'
 import StateFunktionArray from './components/state/StateFunktionArray'
 import StateFunktionObjekt from './components/state/StateFunktionObjekt'
@@ -39,7 +44,7 @@ function App() {
   } else {
     ausgabe2 = <div>Bitte anmelden!</div>
   }
-  
+
   /*
   if (istAngemeldet) {
     return <div>Willkommen!</div>
@@ -49,59 +54,66 @@ function App() {
   */
 
   return (// JS-Kommentar
-  <>
-    {/* JSX-Kommentar */}
+    <>
+      {/* JSX-Kommentar */}
 
-    Hallo, {vorname}!
+      Hallo, {vorname}!
 
-    <h2>Conditional Rendering</h2>
-    <h4>if-Logik</h4>
-    {ausgabe1}
-    <h4>if-else-Logik</h4>
-    {ausgabe2}
-      
-    <h2>Conditional Rendering, Vol. 2</h2>
-    <h4>if-Logik</h4>
-    {
-      /* if-Logik per Short-Circuit-Operator */
-      istAngemeldet &&
-      <div>Willkommen!</div>
-    }
-    <h4>if-else-Logik</h4>
-    {
-      /* if-else-Logik per ternärem Operator */
-      istAngemeldet ?
-      <div>Willkommen!</div> :
-      <div>Bitte anmelden!</div>
-    }
+      <h2>Conditional Rendering</h2>
+      <h4>if-Logik</h4>
+      {ausgabe1}
+      <h4>if-else-Logik</h4>
+      {ausgabe2}
 
-    <Properties
-      vorname={vorname}
-      nachname={nachname}
-      bio={biografie}
-    />
+      <h2>Conditional Rendering, Vol. 2</h2>
+      <h4>if-Logik</h4>
+      {
+        /* if-Logik per Short-Circuit-Operator */
+        istAngemeldet &&
+        <div>Willkommen!</div>
+      }
+      <h4>if-else-Logik</h4>
+      {
+        /* if-else-Logik per ternärem Operator */
+        istAngemeldet ?
+          <div>Willkommen!</div> :
+          <div>Bitte anmelden!</div>
+      }
 
-    <Listen />
+      <Properties
+        vorname={vorname}
+        nachname={nachname}
+        bio={biografie}
+      />
 
-    <EventsFunktion />
-    <EventsKlasse />
+      <Listen />
 
-    <PropsElter />
+      <EventsFunktion />
+      <EventsKlasse />
 
-    <Beispiel />
-    <Beispiel2 />
+      <PropsElter />
 
-    <StateKlasse />
-    <StateKlasseArray />
-    <StateKlasseObjekt />
+      <Beispiel />
+      <Beispiel2 />
 
-    <StateFunktion />
-    <StateFunktionArray />
-    <StateFunktionObjekt />
+      <StateKlasse />
+      <StateKlasseArray />
+      <StateKlasseObjekt />
 
-    <Formular />
+      <StateFunktion />
+      <StateFunktionArray />
+      <StateFunktionObjekt />
 
-  </>)
+      <Formular />
+
+      <LebenszyklusKlasse />
+      <LebenszyklusFunktion />
+
+      <RefKlasse />
+      <RefFunktion />
+      <RefFunktionPersistent />
+
+    </>)
 }
 
 export default App
