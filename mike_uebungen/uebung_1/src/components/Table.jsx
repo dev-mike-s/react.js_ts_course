@@ -25,15 +25,15 @@ function Table(props) {
           </tr>
         </thead>
         <tbody>
+          {console.log("TEST - structure of props/data ?")}
           {console.log(props)}
-          {props.books &&
-            props.books.map((value, index) => {
-              return <TableRow key={index} {...value} />;
-            })}
-          {props.audio &&
-            props.audio.map((value, index) => {
-              return <TableRow key={index} {...value} />;
-            })}
+          {console.log("TEST END - structure of props/data ?")}
+          {props.books.map((value, index) => {
+            return <TableRow key={index} {...value} />;
+          })} ||
+          {props.audio.map((value, index) => {
+            return <TableRow key={index} {...value} />;
+          })}
         </tbody>
       </table>
     </>

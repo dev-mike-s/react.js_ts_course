@@ -70,7 +70,7 @@ function Main() {
     },
   ];
 
-  console.log('Test');
+  console.log('Start Test')
 
   return (
     <main>

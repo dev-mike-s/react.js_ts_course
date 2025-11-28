@@ -1,15 +1,15 @@
 import React from 'react';
 
-function TableRow({ Autor, Titel, Jahr, Seiten, Laenge, Verlag }) {
-  console.log(Autor, Titel, Jahr, Seiten, Laenge, Verlag);
+function TableRow(props) {
+  console.log();
   return (
     <tr>
-      <td>{Autor}</td>
-      <td>{Titel}</td>
-      <td>{Jahr}</td>
-      <td>{Seiten ? Seiten : ''}</td>
-      <td>{Laenge ? Laenge : ''}</td>
-      <td>{Verlag}</td>
+      <td>{props.Autor}</td>
+      <td>{props.Titel}</td>
+      <td>{props.Jahr}</td>
+      <td>{props.Seiten ? props.Seiten : ''}</td>
+      <td>{props.Laenge ? props.Laenge : ''}</td>
+      <td>{props.Verlag}</td>
     </tr>
   );
 }

@@ -1,0 +1,186 @@
+*********
+* Teil 01
+*********
+
+* Erstelle ein neues Projekt mit dem Namen "uebung1".
+
+* In "App.jsx" ersetze den Rückgabewert durch:
+
+*********
+    <>
+      <h1>Bücher und mehr</h1>
+    </>
+*********
+
+* In "App.css" ersetze den existierenden Inhalt durch:
+
+*********
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #122240;
+}
+
+h1 {
+  text-transform: capitalize;
+}
+
+table {
+  text-align: left;
+  border: 1px solid#284c94;
+  border-collapse: collapse
+}
+td, th {
+  border: 1px solid #284c94;
+  border-collapse: collapse;
+  padding: 6px 8px;
+  max-width: 200px
+}
+th {
+  background-color: #dce5f5;
+}
+.odd td {
+  background-color: #e9edf5;
+}
+td.button {
+  cursor: pointer;
+}
+
+button {
+  padding: 6px 8px;
+  background-color: #dce5f5;
+  border: 1px solid #284c94;
+  cursor: pointer;
+}
+*********
+
+
+
+*********
+* Teil 02
+*********
+
+* Erstelle eine neue Funktionskomponente mit dem Namen "Main.jsx" und binde sie in "App.jsx"
+ein, nach der Überschrift.
+* Grundgerüst für den Rückgabewert:
+
+*********
+        <main>
+            <h2>Bücher</h2>
+            <h2>Audio-Books</h2>
+        </main>
+*********
+
+* Speichere folgende Daten in einer Konstante namens "BOOKS":
+
+*********
+	[
+        {
+            'Autor': 'Stephen King',
+            'Titel': 'Carrie',
+            'Jahr': 1974,
+            'Seiten': 199,
+            'Verlag': 'Doubleday'
+        },
+        {
+            'Autor': 'Stephen King',
+            'Titel': 'The Shining',
+            'Jahr': 1977,
+            'Seiten': 447,
+            'Verlag': 'Doubleday'
+        },
+        {
+            'Autor': 'Stephen King',
+            'Titel': 'Christine',
+            'Jahr': 1983,
+            'Seiten': 526,
+            'Verlag': 'Viking'
+        },
+        {
+            'Autor': 'Stephen King',
+            'Titel': 'It',
+            'Jahr': 1986,
+            'Seiten': 1138,
+            'Verlag': 'Viking'
+        },
+        {
+            'Autor': 'Stephen King',
+            'Titel': 'Misery',
+            'Jahr': 1987,
+            'Seiten': 310,
+            'Verlag': 'Viking'
+        },
+        {
+            'Autor': 'Stephen King',
+            'Titel': 'Joyland',
+            'Jahr': 2013,
+            'Seiten': 288,
+            'Verlag': 'Hard Case Crime'
+        }
+    ]
+*********
+
+* Speichere folgende Daten in einer weiteren Konstante namens "AUDIO":
+
+*********
+	[
+        {
+            'Autor': 'Stephen King',
+            'Titel': 'On Writing: A Memoir of the Craft ',
+            'Jahr': 2000,
+            'Länge': 120,
+            'Verlag': 'Simon & Schuster Audio'
+        },
+        {
+            'Autor': 'Stephen King',
+            'Titel': 'Salem\'s Lot (introduction)',
+            'Jahr': 2004,
+            'Länge': 180,
+            'Verlag': 'Simon & Schuster Audio'
+        },
+        {
+            'Autor': 'Stephen King',
+            'Titel': 'Bag of Bones',
+            'Jahr': 2005,
+            'Länge': 240,
+            'Verlag': 'Simon & Schuster Audio'
+        }
+    ]
+*********
+
+
+
+*********
+* Teil 03
+*********
+
+* Erstelle eine neue Funktionskomponente mit dem Namen "Table.jsx". Diese soll, basierend
+auf den gespeicherten Daten, jeweils eine Tabelle erzeugen.
+* Binde sie in "Main.jsx" jeweils nach den H2's ein.
+
+
+
+*********
+* Teil 04
+*********
+
+* Erstelle eine neue Funktionskomponente mit dem Namen "TableRow.jsx". Diese soll in der
+jeweiligen Tabelle jeweils eine Zeile mit den dazugehörigen Zellen erzeugen.
+* Binde diese Komponente in "Table.jsx" an der passenden Stelle ein.
+
+
+
+**********
+* WICHTIG!
+**********
+
+* Da die Struktur der "books"- bzw. "audio"-Daten unterschiedlich ist, können auch wahlweise
+zwei unterschiedliche "Table"- bzw. "TableRow"-Komponenten verwendet werden.
+
+
+
+***************
+* Zusatzaufgabe
+***************
+
+* Jedes zweite TR der Funktionskomponente "TableRow.jsx"
+soll außerdem die Klasse "odd" bekommen.

@@ -1,14 +1,14 @@
-# 🚀 Projektname
+# 🚀 Modernes React mit JavaScript und TypeScript
 <br>
 
-Diese Monorepo mit zentralisierten configs, dient intensiver Weiterbildung in Vollzeit über einen 4-wöchigen Zeitraum (inkl. vieler Überstunden ;-), in den modernen Frontend-Entwicklung mit React.js in JavaScript und TypeScript. 
+Diese Monorepo mit zentralisierten configs und einem node-modules Ordner, dient intensiver Weiterbildung in Vollzeit über einen 4-wöchigen Zeitraum (inkl. vieler Überstunden ;-) in der modernen Frontend-Entwicklung mit React.js in JavaScript und TypeScript. 
 
-Da der Kurs von meiner Seite aus, gerade was die Programmierung angeht -
-teilweise von einem remote PC (Cloud) absolviert wurde - war dies die perfekte Gelegenheit meinen zuletzt im CRM-Software-Unternehmen praktizierten Umgang mit git, Github Desktop und Github Web weiter routinemäßig auszuführen. 
+Da der Kurs von meiner Seite aus, gerade was die Programmierung angeht - teilweise von einem remote PC (Cloud) absolviert wurde. 
+War dies die perfekte Gelegenheit meinen "Code-" Umgang, zuletzt im CRM-Software-Unternehmen routinemäßig praktiziert - mit git, Github Desktop und Github Web weiter auszuführen. 
 
 <br>
 
-Randnotiz ich (dev-mike-s) bin der Uhrheber und habe dieses README.md nach der Formel 80-20 zum überwiegenden Teil durch menschliche Arbeit erstellt, der Rest entstammt Gen-KI-Ursprungs. 
+Randnotiz: Ich, dev-mike-s bin der Urheber und habe dieses README.md nach der Formel 80-20 zum überwiegenden Teil durch menschliche Arbeit erstellt, der Rest entstammt Gen-KI-Ursprungs. Gleiches Spiel gilt für die gesamte Monorepo *Know-how first, Copy-Paste second*.
 
 **Primäre Konzepte / Themen:**
 
@@ -41,6 +41,11 @@ Installations Befehle auf root Ebene:
 Bash
 
 npm i
+npm i react-router
+npm i react react-dom
+npm i --save-dev vite@latest 
+npm i --save-dev @types/react @types/react-dom
+
 
 Bash
 
@@ -50,8 +55,12 @@ Bash
 
 # todo Befehle und Testing
 
-Skript	Beschreibung
-npm run dev	Startet den Entwicklungsserver mit Hot Reload.
+Bash
+
+npm run dev
+npm run uebung1
+
+Bash
 
 Sidenotes: Auf branching wird verzichtet, da es primär um das Synchronisieren meiner Kurs-Unterlagen und meines Codes geht.
 

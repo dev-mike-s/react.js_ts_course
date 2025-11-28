@@ -23,7 +23,7 @@
     "react-router": "^7.9.6"
   },
   "scripts": {
-    "uebung-1": "cross-env VITE_APP_ROOT=mike_uebungen/uebung_1 npx vite --config vite.shared.js",
+    "uebung1": "cross-env VITE_APP_ROOT=mike_uebungen/uebung_1 npx vite --config vite.shared.js",
     "uebung1-ts": "cross-env VITE_APP_ROOT=mike_uebungen/uebung_1-ts npx vite --config vite.shared.js",
     "uebung2": "cross-env VITE_APP_ROOT=mike_uebungen/uebung_2 npx vite --config vite.shared.js",
     "uebung3": "cross-env VITE_APP_ROOT=mike_uebungen/uebung_3 npx vite --config vite.shared.js",
