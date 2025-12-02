@@ -1,0 +1,47 @@
+*******************************
+* CHEAT SHEET REACT MATERIAL UI
+*******************************
+https://mui.com/material-ui/getting-started/
+
+Core:
+npm install @mui/material @emotion/react @emotion/styled
+
+Icons:
+npm install @mui/icons-material
+
+Roboto Font:
+npm install @fontsource/roboto
+
+
+App.jsx
+------>
+
+import '@fontsource/roboto/400.css'
+
+
+THEMING
+*******
+https://mui.com/material-ui/customization/theming/
+https://mui.com/material-ui/customization/default-theme/
+https://mui.com/material-ui/customization/color/
+
+
+App.jsx
+------->
+
+import { createTheme, ThemeProvider, colors } from '@mui/material'
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: colors.purple[300]
+    },
+    secondary: {
+      main: "#336633"
+    },
+  },
+})
+
+return (<ThemeProvider theme={theme}>
+		<div></div>
+	</ThemeProvider>)

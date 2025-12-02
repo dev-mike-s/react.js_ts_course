@@ -1,0 +1,12 @@
+import { Link } from 'react-router'
+
+function About(props) {
+  return (
+    <div>
+        Über {props.wen}<br />
+        <Link to="/">zur Startseite</Link>
+    </div>
+  )
+}
+
+export default About
