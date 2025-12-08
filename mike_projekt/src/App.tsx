@@ -2,23 +2,19 @@
 import type { HelloWorld } from './types';
 import './App.css'
 
-interface HelloWorldType {
-  helloworld: HelloWorld;
-}
-
 function App() {
 
-  const helloWorldData: HelloWorld = { name: 'Hello World!' };
-  const helloWorldTest: HelloWorldType = {
-    helloworld: helloWorldData,
-  };
+  const helloWorld: HelloWorld = { name: 'Hello World!' };
 
   return (
-    <>
-      <div>
-        <h1>{helloWorldTest.helloworld.name}</h1>
-      </div>
-    </>
+
+    <div>
+      <h1 className="text-3xl font-bold underline">
+        {helloWorld.name}
+      </h1>
+    </div>
+        
+    
   );
 }
 
