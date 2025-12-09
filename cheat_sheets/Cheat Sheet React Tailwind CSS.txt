@@ -1,30 +1,71 @@
-********************************
-* CHEAT SHEET REACT TAILWIND CSS
-********************************
+CHEAT SHEET REACT TAILWIND CSS
 https://tailwindcss.com/docs/installation/using-vite
 
-
-Tailwind CSS installieren
------------------------->
+------------->
+INSTALLATION
 
 cd my-project
 npm install tailwindcss @tailwindcss/vite
 
-
-Vite-Plugin konfigurieren (in "vite.config.ts")
----------------------------------------------->
-
-import { defineConfig } from 'vite'
-import tailwindcss from '@tailwindcss/vite' // <- Hinzufügen!
+Vite-Konfiguration (vite.config.ts)
+import { defineConfig }
+import tailwindcss from '@tailwindcss/vite'  
 
 export default defineConfig({
-	plugins: [
-		tailwindcss(), // <- Hinzufügen!
-	],
-})
+  plugins: [tailwindcss()],
+})  
 
-
-Tailwind CSS importieren (in CSS-Datei)
--------------------------------------->
+---------------->
+CSS IMPORTIEREN
 
 @import "tailwindcss";
+
+LAYOUT & CONTAINER:
+container, max-w-, w-, max-h-, h-, min-w-, min-h-
+Flex & Grid
+flex, inline-flex, grid, inline-grid
+flex-row, flex-col
+justify-start, center, end, between, around, evenly
+items-start, center, end, stretch
+gap-*
+
+-------------->
+BOX & SPACING:
+p-, px-, py-, m-, mx-, my-
+space-x-, space-y-
+Text & Typography
+text-, font-, tracking-, leading-
+uppercase, lowercase, capitalize, normal-case
+text-gray-*, text-primary
+
+--------------------->
+HINTERGRUND & BORDER
+bg-, border, border-, rounded-, shadow, opacity-
+Positionierung & Z-Index
+static, relative, absolute, fixed, sticky
+inset-, top-, right-, bottom-, left-*
+z-*
+
+------------------->
+RESPONSIVE DESIGN:
+sm:, md:, lg:, xl:, 2xl:
+Beispiel: className="text-base md:text-lg"
+
+
+-------------------------->
+ZUSTÄNDE & PSEUDO KLASSEN
+hover:, focus:, active:
+group, group-hover:
+Transition & Animation
+transition, transition-, duration-, ease-*
+Farben & Custom Colors
+Standard: gray, red, yellow, green, blue, indigo, purple, pink
+Farben in config anpassen (z.B. bg-primary)
+
+------------------>
+WEITERE KONZEPTE:
+Zustands-Variablen: group, group-hover: für komplexe Interaktionen
+Positionierung: inset-0, top-4, left-1/2
+Sizing & Min/Max: min-w-, max-w-, min-h-, max-h-
+Text & Hintergrund Effekte: truncate, break-words, bg-opacity-*
+Animation & Transition: ease-in, ease-out, duration-300

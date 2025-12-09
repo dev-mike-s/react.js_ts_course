@@ -16,6 +16,8 @@ Unternehmenswebsite im Zuge meiner Neben-Selbstständigkeit
 - npm
 - react v19 mit vite
 - tailwind v3
+- font awesome5
+- browser router
 
 ## Installation
 

@@ -4,7 +4,7 @@
 
 
 vite installieren
----------------->
+------------------>
 
 npm install -g vite
 
@@ -13,7 +13,7 @@ sudo npm install -g vite
 
 
 neues Projekt
------------->
+-------------->
 
 npm create vite@latest projekt-name
 cd projekt-name
@@ -21,28 +21,28 @@ npm install
 
 
 Entwicklungsserver starten
-------------------------->
+--------------------------->
 
 cd projekt-name
 npm run dev
 
 
 Produktions-Build erzeugen
-------------------------->
+--------------------------->
 
 npm run build
 
 -> https://vitejs.dev/config/shared-options.html#base
 
 Verzeichnisse relativ zu "index.html" (in "vite.config.js" hinzufügen)
---------------------------------------------------------------------->
+----------------------------------------------------------------------->
 
 export default defineConfig({
   base: '/relativerpfad/',
 })
 
 für ein Unterverzeichnis konfigurieren (in "vite.config.js" hinzufügen)
----------------------------------------------------------------------->
+------------------------------------------------------------------------>
 
 export default defineConfig({
   base: 'http://beispiel.de/relativerpfad',
@@ -50,13 +50,13 @@ export default defineConfig({
 
 
 Vorschau Produktions-Build
-------------------------->
+--------------------------->
 
 npm run preview
 
 
 Snippets (ES7+ React/Redux/React-Native snippets)
---------------------------------
+-------------------------------------------------
 
 rfce  = React Functional Component
 rafce = React Arrow Functional Component

@@ -1,3 +1,5 @@
+// root/src/example.js
+
 // @ts-check
 // Simple JS example (copyable) showing how to get lightweight type hints with JSDoc
 // TypeScript users should keep `src/types.ts` as the single source of truth.

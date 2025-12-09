@@ -1,4 +1,12 @@
-// Centralisation of the types globally
+// root/src/types.ts
+
+/** 
+ * Centralisation of the types globally
+ * 
+ * @returns type1, type2, ...
+ * 
+ * @docs    https://react.dev/learn/typescript
+ */
 
 export interface HelloWorld {
     name: string

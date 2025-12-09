@@ -1,5 +1,13 @@
+// root/tsconfig.json 
+
+// Umgebung: Allgemein
+// Die Basisdatei, die die anderen erweitert und allgemeine Regeln definiert.
+ 
 {
   "files": [],
+  "compilerOptions": {
+    "types": ["vitest/globals", "vite/client"]
+  },
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }

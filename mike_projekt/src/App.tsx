@@ -1,21 +1,35 @@
-//import { useState } from 'react'
-import type { HelloWorld } from './types';
-import './App.css'
+// root/src/App.tsx
+//
 
-function App() {
+import type { HelloWorld } from './types';
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import HomePage from './pages/HomePage.tsx'
+import AboutPage from './pages/AboutPage.tsx'
+
+/** 
+ * @returns dies das
+ */
+const App: React.FC = () => {
 
   const helloWorld: HelloWorld = { name: 'Hello World!' };
 
-  return (
-
+  {/*    
     <div>
       <h1 className="text-3xl font-bold underline">
         {helloWorld.name}
       </h1>
-    </div>
-        
-    
-  );
-}
+    </div> 
+  */}
 
-export default App
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={ <HomePage/> } />
+        <Route path="/about" element={ <AboutPage/> } />
+      </Routes>
+    </Router>
+  );
+};
+
+export default App;
+ 

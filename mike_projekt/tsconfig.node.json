@@ -1,3 +1,9 @@
+// root/tsconfig.node.json
+//
+// Umgebung: Server/Node.js
+// Konfiguration für Dateien, die in Node.js laufen, wie z.B. die vite.config.ts oder 
+// Test-Dateien, wenn JSDOM genutzt wird.
+
 {
   "compilerOptions": {
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
