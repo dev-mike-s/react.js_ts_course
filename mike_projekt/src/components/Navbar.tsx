@@ -20,10 +20,8 @@ function Navbar()
     }
 
     return (
-    <>
-        <h1 className="bg-red-500 text-white p-4">Test</h1>
-        
-        <nav className="navigation">
+    <>        
+        <nav className="navigation bg-blue-900 ">
             <div className="max-w-7xl mx-auto">
                 <div className="flex mx-auto justify-between w-5/6">
                     <div className="flex items-center gap-16 my-12">
@@ -32,20 +30,20 @@ function Navbar()
                         <div>
                             <a href="/" className="flex gap-1 font-bold text-gray-700 items-center"
                             >
-                                <FaReact className="h-6 w-6 text-primary"/>
-                                <span className="">MSP</span>
+                                <FaReact className="h-6 w-6 "/>
+                                <span className="text-white">MSP</span>
                             </a>
                         </div>
 
                         { /* primary nav */ } 
-                        <div className="hidden lg:flex gap-8 ">
+                        <div className="hidden lg:flex gap-8">
                             <a  href="#" className=""
                             >
                             Start
                             </a>
-                            <a href="#">Leist</a>
-                            <a href="#">Über</a>
-                            <a href="#">Kont</a>
+                            <a href="#" className="text-white">Leist</a>
+                            <a href="#" className="text-white">Über</a>
+                            <a href="#" className="text-white">Kont</a>
                         </div>
 
                         {/* secondary */}

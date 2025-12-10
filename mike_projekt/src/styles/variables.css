@@ -8,15 +8,17 @@
  */
 
 :root {
-  /* Tailwind Farben (Integration mit Tailwind) */
-  --color-primary: #3b82f6;
-  --color-secondary: #ef4444;
-  --color-accent: #8b5cf6;
+  --color-primary: #1C4B82;   /* Königsblau: Für Haupt-Elemente (Buttons, Header) */
+  --color-primary-dark: #183661; /* Meerblau: Für Hover-Effekte oder dunkle Hintergründe */
+  --color-accent: #DD6B4D;      /* Orange: Für CTAs, Warnungen oder Highlights */
 
-  /* Text & UI Farben */
+  /* --- Hintergrund- & Textfarben --- */
+  --color-background-light: #DAE1E7; /* Weiß (Grau-Weiß): Haupt-Hintergrund für Inhalte */
+  
+  /* --- Bestehende Text- & UI-Farben beibehalten oder anpassen --- */
   --color-text-primary: #333333;
   --color-text-secondary: #666666;
-  --color-bg-light: #f9f9f9;
+  --color-bg-light: #f9f9f9; /* Kann durch --color-background-light ersetzt werden */
   --color-bg-white: #ffffff;
 
   /* Spacing & Sizing */
