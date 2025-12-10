@@ -1,15 +1,16 @@
 // root/src/pages/AboutPage.tsx
-//
 
-import React from 'react'
+//import React from 'react'
 
 /** 
  * @returns dies das
  */
-export default function AboutPage() {
+function AboutPage() 
+{
   return (
     <div>
       
     </div>
   )
 }
+export default AboutPage

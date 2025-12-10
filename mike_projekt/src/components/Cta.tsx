@@ -1,15 +1,17 @@
 // root/src/components/Cta.tsx
-//
 
-import React from 'react'
+//import React from 'react'
 
 /** 
- * @returns dies das
+ * @returns todo
  */
-export default function Cta() {
+function Cta() 
+{
   return (
     <div>
-      
+      <h3>Cta</h3>
     </div>
   )
 }
+
+export default Cta;

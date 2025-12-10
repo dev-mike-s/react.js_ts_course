@@ -1,47 +1,57 @@
-/* src/styles/index.css */
+/** src/styles/index.css
+ * 
+ * Globaler Reset, Basis-Schriftarten und Tailwind-Integration
+ * Muss zuerst importiert werden, damit Variablen und Reset verfügbar sind
+ * 
+ * @return
+ * @docs
+ */
 
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+/* 1. Variablen müssen zuerst geladen werden */
+@import './variables.css';
+@import "tailwindcss";
 
-:root {
+/* 2. CSS Reset für konsistentes Verhalten in verschiedenen Browsern */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* 4. Globale Font und Basis-Stile */
+body {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-white);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* 5. Link Styles */
 a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color var(--transition-fast);
 }
+
 a:hover {
+  color: var(--color-secondary);
 }
-body {
-}
-h1 {
-}
-button {
-}
-button:hover {
-}
-button:focus,
-button:focus-visible {
-}
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
+
+/* 6. Dark Mode Overrides */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--color-bg-light);
+    color: var(--color-text-primary);
   }
 }

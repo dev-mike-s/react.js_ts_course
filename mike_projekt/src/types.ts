@@ -5,7 +5,8 @@
  * 
  * @returns type1, type2, ...
  * 
- * @docs    https://react.dev/learn/typescript
+ * @docs https://react.dev/learn/typescript
+ * @docs https://richak.hashnode.dev/how-to-build-a-reusable-and-extensible-button-component-in-react-with-typescript
  */
 
 export interface HelloWorld {

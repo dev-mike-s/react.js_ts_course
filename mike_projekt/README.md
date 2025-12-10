@@ -3,12 +3,12 @@
 
 Kurze Beschreibung:  
 Dieses Projekt ist eine React-Anwendung, geschrieben in JavaScript & TypeScript, es ist die Überarbeitung meiner bestehenden
-Unternehmenswebsite im Zuge meiner Neben-Selbstständigkeit
+Unternehmenswebsite im Zuge meiner Neben-Selbstständigkeit.
 
 ## Must-Have-Features
 
-- Components: Navbar, Hero (Animation), Technology section, services section, contactformular, sidebar, footer
--
+- mobile first
+- landing page components: mobile- navbar, hero animation, contact, etc.
 
 ## Voraussetzungen
 
@@ -18,6 +18,7 @@ Unternehmenswebsite im Zuge meiner Neben-Selbstständigkeit
 - tailwind v3
 - font awesome5
 - browser router
+- vitest für tdd
 
 ## Installation
 

@@ -1,17 +1,17 @@
-// root/src/pages/LoginPage.tsx
+// root/src/components/Hero.tsx
 
 //import React from 'react'
 
 /** 
  * @returns todo
  */
-function LoginPage() 
+function Hero() 
 {
   return (
     <div>
-      
+      <h3>Hero</h3>
     </div>
   )
 }
 
-export default LoginPage
+export default Hero

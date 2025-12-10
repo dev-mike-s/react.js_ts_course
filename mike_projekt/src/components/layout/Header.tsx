@@ -1,17 +1,17 @@
-// root/src/pages/LoginPage.tsx
+// root/src/components/Layout/Header/Header.tsx
+//
 
 //import React from 'react'
 
 /** 
  * @returns todo
  */
-function LoginPage() 
+function Header() 
 {
   return (
     <div>
-      
     </div>
   )
 }
 
-export default LoginPage
+export default Header

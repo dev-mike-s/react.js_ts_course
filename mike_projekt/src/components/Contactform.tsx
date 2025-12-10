@@ -1,15 +1,17 @@
 // root/src/components/Contactform.tsx
-//
 
-import React from 'react'
+//import React from 'react'
 
 /** 
- * @returns dies das
+ * @returns todo
  */
-export default function Contactform() {
+function Contactform() 
+{
   return (
     <div>
-      
+      <h3>Contact Form</h3>
     </div>
   )
 }
+
+export default Contactform;
