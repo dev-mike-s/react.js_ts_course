@@ -3,6 +3,7 @@
 
 import { useState } from 'react';
 import { FaReact, FaBars } from "react-icons/fa6";
+import companylogo from '../assets/logo.png';
 
 /** 
  * @returns todo
@@ -12,33 +13,41 @@ function Navbar()
 {
     const [toggleMenu, setToggleMenu] = useState(false);
     
-    const handleToggleMenu = () => {
-        if (toggleMenu === null) {
-            throw new Error("toggleMenu is null");
-        }
-        setToggleMenu(!toggleMenu);
+    const handleToggleMenu = () => 
+    {
+        setToggleMenu((toggleMenu) => {
+            return toggleMenu === false ? true : false;
+        });
     }
 
     return (
     <>        
-        <nav className="navigation bg-blue-900 ">
+        {console.log("Komponente: Navbar, Wert von toggleMenu: " + toggleMenu)}
+
+        <nav className="navigation bg-gray-800 h-15 lg:h-20 m-0 p-0">
             <div className="max-w-7xl mx-auto">
                 <div className="flex mx-auto justify-between w-5/6">
-                    <div className="flex items-center gap-16 my-12">
+                    <div className="flex items-center gap-24 my-0">
 
                         { /* logo */ }
-                        <div>
+                        { /* <div style={{ paddingLeft: '16px' }}>
                             <a href="/" className="flex gap-1 font-bold text-gray-700 items-center"
                             >
-                                <FaReact className="h-6 w-6 "/>
-                                <span className="text-white">MSP</span>
+                                <img src={ companylogo } alt="MSP Logo" className="h-16 w-16"/>
+                                <span className=""></span>
                             </a>
+                        </div> */}
+                                        
+                        { /* logo */ }
+                        <div className="flex items-center">
+                        <a href="/" className="flex gap-1 font-bold text-gray-700 items-center">
+                            <img src={companylogo} alt="MSP Logo" className="h-16 w-16"/>
+                        </a>
                         </div>
-
+                        
                         { /* primary nav */ } 
                         <div className="hidden lg:flex gap-8">
-                            <a  href="#" className=""
-                            >
+                            <a  href="#" className="text-white">
                             Start
                             </a>
                             <a href="#" className="text-white">Leist</a>
@@ -65,12 +74,10 @@ function Navbar()
                             <button 
                                 type="button" 
                                 className="navbar-toggler" 
-                                aria-controls=''
-                                aria-expanded="false"
                                 onClick={handleToggleMenu}
                             >
                                 <span className="navbar-toggler-icon">
-                                    <FaBars className="h-6" />
+                                    <FaBars className="h-6 fill-blue-100" />
                                 </span>
                             </button>
                         </div>
