@@ -9,7 +9,7 @@ function Cta()
 {
   return (
     <div>
-      <h3>Cta</h3>
+      
     </div>
   )
 }

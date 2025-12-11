@@ -9,7 +9,7 @@ function TechBanner()
 {
   return (
     <div>
-      <h3>TechBanner</h3>
+      
     </div>
   )
 }

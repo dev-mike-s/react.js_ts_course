@@ -4,6 +4,7 @@ import Header from '../components/layout/Header.tsx'
 import Navbar from '../components/Navbar.tsx'
 import NavbarDesktop from '../components/NavbarDesktop.tsx'
 import Hero from '../components/Hero.tsx'
+import HeroDesktop from '../components/HeroDesktop.tsx'
 import TechBanner from '../components/TechBanner.tsx'
 import Services from '../components/Services.tsx'
 import Cta from '../components/Cta.tsx'
@@ -25,7 +26,7 @@ export type DeviceType = typeof Device[keyof typeof Device];
 function HomePage() 
 {
   const [device, setDevice] = useState<DeviceType>(Device.Mobile);
-    
+
   const getDevice = () => 
   {
       const width = window.innerWidth;
@@ -47,21 +48,25 @@ function HomePage()
   useEffect(() => 
   {
       getDevice();
+      
       const handleResize = () => {
           getDevice();
       };
+      
       window.addEventListener('resize', handleResize);
+    
       return () => {
           window.removeEventListener('resize', handleResize);
       };
+      
   }, []);
 
   return (
     <>
       <Header />
-        { device === Device.Mobile ? <Navbar/> : <NavbarDesktop /> }
         { console.log("Komponente: HomePage, Wert von device: " + device) }
-        <Hero />
+        { device === Device.Mobile ? <Navbar/> : <NavbarDesktop /> }
+        { device === Device.Desktop ? <HeroDesktop /> : <Hero /> }
         <TechBanner />
         <Services />
         <Cta />

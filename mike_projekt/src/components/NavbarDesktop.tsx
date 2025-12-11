@@ -1,6 +1,6 @@
 //import React from 'react'
 
-import { useState } from 'react';
+//import { useState } from 'react';
 import { FaReact } from 'react-icons/fa';
 import companylogo from '../assets/logo.png';
 
@@ -23,7 +23,7 @@ function NavbarDesktop()
                         <div style={{ paddingLeft: '24px'}}>
                             <a href="/" className="flex gap-1 font-bold text-gray-700 items-center"
                             >
-                                <img src={ companylogo } alt="MSP Logo" className="h-24 w-24 object-fit: scale-down"/>
+                                <img src={ companylogo } alt="MSP Logo" className="h-20 w-20 object-fit: scale-down"/>
                                 <span className=""></span>
                             </a>
                         </div>
