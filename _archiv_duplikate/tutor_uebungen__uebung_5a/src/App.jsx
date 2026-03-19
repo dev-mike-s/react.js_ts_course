@@ -1,0 +1,296 @@
+import { useState, useEffect } from 'react'
+import { Routes, Route, NavLink } from 'react-router'
+import './App.css'
+import Select from './components/Select'
+import Table from './components/Table'
+import Cart from './components/Cart'
+
+function App() {
+
+  const PRODUKTE = [
+    {
+      "name": "Entertainment",
+      "gruppe": [
+        {
+          "name": "Spiele",
+          "artikel": [
+            {
+              "titel": "Donkey Kong",
+              "jahr": 1981,
+              "publisher": "Nintendo",
+              "preis": 99.99
+            },
+            {
+              "titel": "Pac-Man",
+              "jahr": 1980,
+              "publisher": "Namco",
+              "preis": 99.99
+            },
+            {
+              "titel": "Asteroids",
+              "jahr": 1979,
+              "publisher": "Atari",
+              "preis": 99.99
+            },
+            {
+              "titel": "Space Invaders",
+              "jahr": 1978,
+              "publisher": "Taito",
+              "preis": 99.99
+            },
+            {
+              "titel": "Pong",
+              "jahr": 1972,
+              "publisher": "Atari",
+              "preis": 99.99
+            }
+          ]
+        },
+        {
+          "name": "Bücher",
+          "artikel": [
+            {
+              "autor": "Stephen King",
+              "titel": "Carrie",
+              "jahr": 1974,
+              "seiten": 199,
+              "verlag": "Doubleday",
+              "preis": 9.99
+            },
+            {
+              "autor": "Stephen King",
+              "titel": "The Shining",
+              "jahr": 1977,
+              "seiten": 447,
+              "verlag": "Doubleday",
+              "preis": 9.99
+            },
+            {
+              "autor": "Stephen King",
+              "titel": "Christine",
+              "jahr": 1983,
+              "seiten": 526,
+              "verlag": "Viking",
+              "preis": 14.99
+            },
+            {
+              "autor": "Stephen King",
+              "titel": "It",
+              "jahr": 1986,
+              "seiten": 1138,
+              "verlag": "Viking",
+              "preis": 19.99
+            },
+            {
+              "autor": "Stephen King",
+              "titel": "Misery",
+              "jahr": 1987,
+              "seiten": 310,
+              "verlag": "Viking",
+              "preis": 9.99
+            },
+            {
+              "autor": "Stephen King",
+              "titel": "Joyland",
+              "jahr": 2013,
+              "seiten": 288,
+              "verlag": "Hard Case Crime",
+              "preis": 9.99
+            }
+          ]
+        },
+        {
+          "name": "Audio-Books",
+          "artikel": [
+            {
+              "autor": "Stephen King",
+              "titel": "Bag of Bones",
+              "jahr": 2005,
+              "laenge": 240,
+              "verlag": "Simon & Schuster Audio",
+              "preis": 19.99
+            },
+            {
+              "autor": "Stephen King",
+              "titel": "On Writing: A Memoir of the Craft",
+              "jahr": 2000,
+              "laenge": 120,
+              "verlag": "Simon & Schuster Audio",
+              "preis": 19.99
+            },
+            {
+              "autor": "Stephen King",
+              "titel": "Salem's Lot (introduction)",
+              "jahr": 2004,
+              "laenge": 180,
+              "verlag": "Simon & Schuster Audio",
+              "preis": 29.99
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Sport",
+      "gruppe": [
+        {
+          "name": "Schuhe",
+          "artikel": [
+            {
+              "titel": "Air Betonfuß",
+              "hersteller": "Mike",
+              "preis": 149.99
+            },
+            {
+              "titel": "Turtle Light",
+              "hersteller": "attitas",
+              "preis": 129.99
+            },
+            {
+              "titel": "Royal Classic Loser",
+              "hersteller": "Rehbock",
+              "preis": 99.99
+            }
+          ]
+        },
+        {
+          "name": "Geräte",
+          "artikel": [
+            {
+              "titel": "Hantelset 250g",
+              "beschreibung": "Kurzhantel, 10 Scheiben",
+              "preis": 149.99
+            },
+            {
+              "titel": "Fingerexpander",
+              "beschreibung": "Maximallänge 25cm",
+              "preis": 149.99
+            },
+            {
+              "titel": "Gymnastikball",
+              "beschreibung": "Durchmesser 8,5m",
+              "preis": 149.99
+            }
+          ]
+        }
+      ]
+    }
+  ]
+
+  // Formular
+  const [formular, setzeFormular] = useState({
+    hauptkategorie: "-1",
+    unterkategorie: "-1"
+  })
+  // Formularwerte aktualisieren
+  const aendereKategorie = (e) => {
+    setzeFormular((currentState) => {
+      if (e.target.name === "hauptkategorie") {
+        // hauptkategorie
+        return {
+          [e.target.name]: e.target.value,
+          unterkategorie: "-1"
+        }
+      } else {
+        // unterkategorie
+        return {
+          ...currentState,
+          [e.target.name]: e.target.value
+        }
+      }
+    })
+  }
+
+  // Warenkorb
+  const [warenkorb, setzeWarenkorb] = useState([])
+  // Hinzufügen zum Warenkorb
+  const hinzufuegenZumWarenkorb = (artikel) => {
+    setzeWarenkorb((currentState) => {
+      return [...currentState, artikel]
+    })
+  }
+  // Entfernen vom Warenkorb
+  const entfernenVomWarenkorb = (index) => {
+    setzeWarenkorb((currentState) => {
+      return currentState.filter((ele, i) => {
+        return index != i
+      })
+    })
+  }
+  /* 
+  In dieser Reihenfolge wird hier der
+  Initialwert vom "warenkorb" gespeichert,
+  also ein leeres Array und damit
+  jeder vorher gespeicherte Wert
+  überschrieben.
+
+  useEffect(() => {
+    const WARENKORB_STRING = JSON.stringify(warenkorb)
+    localStorage.setItem("warenkorb", WARENKORB_STRING)
+  }, [warenkorb])
+  */
+
+  // Laden vom WebStorage
+  useEffect(() => {
+    // Warenkorb
+    const WARENKORB_STRING = localStorage.getItem("warenkorb")
+    if (WARENKORB_STRING != null) {
+      const WARENKORB_ARRAY = JSON.parse(WARENKORB_STRING)
+      setzeWarenkorb(WARENKORB_ARRAY)
+    }
+    // Formular
+    const FORMULAR_STRING = localStorage.getItem("formular")
+    if (FORMULAR_STRING != null) {
+      const FORMULAR_OBJEKT = JSON.parse(FORMULAR_STRING)
+      setzeFormular(FORMULAR_OBJEKT)
+    }
+  }, [])
+
+  // Warenkorb speichern
+  useEffect(() => {
+    const WARENKORB_STRING = JSON.stringify(warenkorb)
+    localStorage.setItem("warenkorb", WARENKORB_STRING)
+  }, [warenkorb])
+
+  // Formular speichern
+  useEffect(() => {
+    const FORMULAR_STRING = JSON.stringify(formular)
+    localStorage.setItem("formular", FORMULAR_STRING)
+  }, [formular])
+
+  return (
+    <div id="container">
+      <header>
+        <h1>Bücher und Mehr</h1>
+      </header>
+      <nav className="clearfix">
+        <NavLink to="/"><div>Shop</div></NavLink>
+        <NavLink to="/cart"><div>Warenkorb ({warenkorb.length})</div></NavLink>
+      </nav>
+      <main>
+        <Routes>
+          <Route path="/" element={(
+            <>
+              <Select
+                produkte={PRODUKTE}
+                formular={formular}
+                aendereKategorie={aendereKategorie}
+              />
+              <Table
+                produkte={PRODUKTE}
+                formular={formular}
+                hinzufuegenZumWarenkorb={hinzufuegenZumWarenkorb}
+              />
+            </>
+          )} />
+          <Route path="/cart" element={(<Cart
+            warenkorb={warenkorb}
+            entfernenVomWarenkorb={entfernenVomWarenkorb}
+          />)} />
+        </Routes>
+      </main>
+    </div>
+  )
+}
+
+export default App

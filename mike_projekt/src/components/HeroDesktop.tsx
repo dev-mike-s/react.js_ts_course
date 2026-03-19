@@ -9,7 +9,7 @@ import Dither from './animation/Dither.jsx';
 function HeroDesktop() 
 {
   return (
-  <div style={{ width: '100%', height: '600px', position: 'relative' }}>
+  <div style={{ width: '100%', height: '1080px', position: 'relative' }}>
     <Dither
       waveColor={[0.5, 0.5, 0.5]}
       disableAnimation={false}

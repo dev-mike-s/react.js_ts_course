@@ -17,8 +17,11 @@ export const Device = {
     Tablet: "tablet", 
     Desktop: "desktop"
 } as const;
-
 export type DeviceType = typeof Device[keyof typeof Device];
+
+export const DeviceDetails = {
+  
+}
 
 /** 
  * @returns dies das
@@ -52,13 +55,11 @@ function HomePage()
       const handleResize = () => {
           getDevice();
       };
-      
       window.addEventListener('resize', handleResize);
     
       return () => {
           window.removeEventListener('resize', handleResize);
       };
-      
   }, []);
 
   return (
