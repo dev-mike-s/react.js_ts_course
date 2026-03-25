@@ -23,4 +23,10 @@ Dieser Ordner enthält grundlegende Dateien und Konfigurationen für Tutor-Proje
 - **Quellcode**: Im Ordner `src/`
 - **Öffentliche Dateien**: Im Ordner `public/`
 
+### Gelehrte Inhalte:
+- Einführung in React
+- Aufbau von Komponenten
+- CSS-Integration in React
+- Projektstrukturierung
+
 Verwendung: Grundlagen für neue Projekte oder Übungen.
