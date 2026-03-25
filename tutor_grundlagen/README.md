@@ -19,14 +19,14 @@ If you are developing a production application, we recommend using TypeScript wi
 
 Dieser Ordner enthält grundlegende Dateien und Konfigurationen für Tutor-Projekte. Enthalten sind:
 
-- **Konfigurationsdateien**: `.gitignore`, `eslint.config.js`, `tsconfig.*`, `vite.config.*`
-- **Quellcode**: Im Ordner `src/`
-- **Öffentliche Dateien**: Im Ordner `public/`
-
-### Gelehrte Inhalte:
-- Einführung in React
-- Aufbau von Komponenten
-- CSS-Integration in React
-- Projektstrukturierung
+- **Komponenten**: `Bilder.jsx`, `DynamischeTabelle.jsx`
+- **Techniken**:
+  - CSS-Module: Strukturierte und modulare CSS-Integration.
+  - Events: Umgang mit Benutzerinteraktionen (z. B. `onClick`, `onChange`).
+  - Forms: Formularhandling in React.
+  - Lifecycle: Lebenszyklusmethoden wie `componentDidMount`, `useEffect`.
+  - Listen: Dynamisches Rendern von Listen mit `map()`.
+  - Props und State: Datenfluss und Zustandsverwaltung.
+  - Ref: Direkter Zugriff auf DOM-Elemente.
 
 Verwendung: Grundlagen für neue Projekte oder Übungen.

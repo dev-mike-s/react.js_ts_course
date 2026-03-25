@@ -5,7 +5,7 @@ Dieser Ordner dient als Archiv für alte oder weniger relevante Inhalte. Enthalt
 - **duplikate/**: Ordner mit doppelten oder archivierten Dateien.
 
 ### Gelehrte Inhalte:
-- Alte Übungen und Projekte
-- Historische Referenzen
+- **`tutor_uebungen__uebung_5a`**:
+  - Ältere Übungsdateien, die grundlegende React-Techniken wie Props und State behandeln.
 
 Verwendung: Aufbewahrung von nicht mehr aktiv genutzten Dateien.
