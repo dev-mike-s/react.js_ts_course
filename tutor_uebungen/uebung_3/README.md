@@ -1,16 +1,46 @@
-# React + Vite
+# Übung 3
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Aufgabenstellung
 
-Currently, two official plugins are available:
+### Teil 01
+- Erstelle ein neues Projekt mit dem Namen `uebung03`.
+- In `App.jsx` ersetze den Rückgabewert durch:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```jsx
+<>
+  <h1>Music</h1>
+</>
+```
 
-## React Compiler
+- In `App.css` ersetze den existierenden Inhalt durch:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```css
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 15px;
+  color: #122240;
+}
+```
 
-## Expanding the ESLint configuration
+## Lösung
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Schritt 1: Projekt erstellen
+- Erstelle einen neuen Ordner `uebung03`.
+
+### Schritt 2: `App.jsx` aktualisieren
+- Ersetze den Inhalt von `App.jsx` mit:
+
+```jsx
+function App() {
+  return (
+    <>
+      <h1>Music</h1>
+    </>
+  );
+}
+
+export default App;
+```
+
+### Schritt 3: `App.css` aktualisieren
+- Ersetze den Inhalt von `App.css` mit dem oben angegebenen Code.

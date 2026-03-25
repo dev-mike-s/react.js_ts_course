@@ -1,30 +1,19 @@
-import type { AudioType, BookType } from "./Main"
+import React from 'react';
 
-type Props = {
-    product: AudioType | BookType,
-    i: number
+interface TableRowProps<T> {
+    item: T;
+    isOdd: boolean;
 }
 
-function TableRow(props: Props) {
-
-    /* 
-    props:
-     - product: Objekt
-     - i: Zahl (Index)
-    */
-
-    const VALUES_ARRAY = Object.values(props.product)
-
+const TableRow = <T extends object>({ item, isOdd }: TableRowProps<T>): React.JSX.Element => {
     return (
-        <tr className={props.i % 2 ? "odd" : undefined}>
-            {
-                VALUES_ARRAY.map((ele) => {
-                    // ele = value (String / Zahl)
-                    return <td>{ele}</td>
-                })
-            }
+        <tr className={isOdd ? 'odd' : ''}>
+            {Object.values(item).map((value, index) => (
+                <td key={index}>{value as React.ReactNode}</td>
+            ))}
         </tr>
-    )
-}
+    );
+};
 
-export default TableRow
+export default TableRow;
+export type { TableRowProps };

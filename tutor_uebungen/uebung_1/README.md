@@ -14,3 +14,32 @@ The React Compiler is not enabled on this template because of its impact on dev 
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+# Übung 1: Bücher und mehr
+
+### Aufgabenbeschreibung
+
+#### Teil 01
+- Erstelle ein neues Projekt mit dem Namen "uebung1".
+- In `App.jsx` ersetze den Rückgabewert durch:
+  ```jsx
+  <>
+    <h1>Bücher und mehr</h1>
+  </>
+  ```
+- In `App.css` ersetze den existierenden Inhalt durch spezifische CSS-Regeln für Layout und Styling.
+
+#### Teil 02
+- Erstelle eine neue Funktionskomponente `Main.jsx` und binde sie in `App.jsx` ein.
+- Speichere Buch- und Audio-Daten in Konstanten `BOOKS` und `AUDIO`.
+
+#### Teil 03
+- Erstelle eine Funktionskomponente `Table.jsx`, die basierend auf den Daten Tabellen erzeugt.
+- Binde `Table.jsx` in `Main.jsx` ein.
+
+#### Teil 04
+- Erstelle eine Funktionskomponente `TableRow.jsx`, die Zeilen für die Tabellen erzeugt.
+- Binde `TableRow.jsx` in `Table.jsx` ein.
+
+#### Zusatzaufgabe
+- Jedes zweite `<tr>` in `TableRow.jsx` soll die Klasse `odd` erhalten.

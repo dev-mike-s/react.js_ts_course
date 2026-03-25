@@ -1,16 +1,52 @@
-# React + Vite
+# Übung 7
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Aufgabenstellung
 
-Currently, two official plugins are available:
+### Teil 01
+- Erstelle ein neues Projekt mit dem Namen `uebung07`, als Kopie von `uebung05a`.
+- Nutze in der Applikation den Redux-Store.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Teil 02
+- Benutze zum dynamischen Erzeugen der Produkttabelle die folgende Spaltendefinition:
 
-## React Compiler
+```javascript
+[
+  [
+    [
+      {
+        key: "titel",
+        label: "Titel"
+      },
+      {
+        key: "jahr",
+        label: "Jahr"
+      },
+      {
+        key: "publisher",
+        label: "Publisher"
+      },
+      {
+        key: "preis",
+        label: "Preis"
+      }
+    ],
+    [
+      {
+        key: "autor",
+        label: "Autor"
+      }
+    ]
+  ]
+]
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Lösung
 
-## Expanding the ESLint configuration
+### Schritt 1: Projekt erstellen
+- Kopiere den Ordner `uebung05a` und benenne ihn in `uebung07` um.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Schritt 2: Redux-Store integrieren
+- Implementiere den Redux-Store in der Applikation.
+
+### Schritt 3: Dynamische Produkttabelle
+- Nutze die oben angegebene Spaltendefinition, um die Tabelle dynamisch zu erstellen.
