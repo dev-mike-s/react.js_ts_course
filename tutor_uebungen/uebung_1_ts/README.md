@@ -71,3 +71,32 @@ export default defineConfig([
   },
 ])
 ```
+
+# Übung 1 (TypeScript): Bücher und mehr
+
+### Aufgabenbeschreibung
+
+#### Teil 01
+- Erstelle ein neues Projekt mit dem Namen "uebung1".
+- In `App.tsx` ersetze den Rückgabewert durch:
+  ```tsx
+  <>
+    <h1>Bücher und mehr</h1>
+  </>
+  ```
+- In `App.css` ersetze den existierenden Inhalt durch spezifische CSS-Regeln für Layout und Styling.
+
+#### Teil 02
+- Erstelle eine neue Funktionskomponente `Main.tsx` und binde sie in `App.tsx` ein.
+- Speichere Buch- und Audio-Daten in Konstanten `BOOKS` und `AUDIO`.
+
+#### Teil 03
+- Erstelle eine Funktionskomponente `Table.tsx`, die basierend auf den Daten Tabellen erzeugt.
+- Binde `Table.tsx` in `Main.tsx` ein.
+
+#### Teil 04
+- Erstelle eine Funktionskomponente `TableRow.tsx`, die Zeilen für die Tabellen erzeugt.
+- Binde `TableRow.tsx` in `Table.tsx` ein.
+
+#### Zusatzaufgabe
+- Jedes zweite `<tr>` in `TableRow.tsx` soll die Klasse `odd` erhalten.

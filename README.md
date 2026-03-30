@@ -1,89 +1,35 @@
-# 🚀 Modernes React mit JavaScript und TypeScript
-<br>
+# React.js & TypeScript Course Repository
 
-Diese Monorepo mit zentralisierten configs und einem node-modules Ordner, dient intensiver Weiterbildung in Vollzeit über einen 4-wöchigen Zeitraum (inkl. vieler Überstunden ;-) in der modernen Frontend-Entwicklung mit React.js in JavaScript und TypeScript. 
+## Übersicht
 
-Da der Kurs von meiner Seite aus, gerade was die Programmierung angeht - teilweise von einem remote PC (Cloud) absolviert wurde. 
-War dies die perfekte Gelegenheit meinen "Code-" Umgang, zuletzt im CRM-Software-Unternehmen routinemäßig praktiziert - mit git, Github Desktop und Github Web weiter auszuführen. 
+Dieses Repository enthält alle Materialien, Übungen und Projekte, die im Rahmen des React.js- und TypeScript-Kurses behandelt werden. Es ist in verschiedene Ordner unterteilt, die jeweils spezifische Inhalte und Aufgaben abdecken.
 
-<br>
+## Struktur
 
-Randnotiz: Ich, dev-mike-s bin der Urheber und habe dieses README.md nach der Formel 80-20 zum überwiegenden Teil durch menschliche Arbeit erstellt, der Rest entstammt Gen-KI-Ursprungs. Gleiches Spiel gilt für die gesamte Monorepo *Know-how first, Copy-Paste second*.
+- **archiv/**: Enthält archivierte und ältere Versionen von Projekten und Übungen.
+- **cheat_sheets/**: Nützliche Spickzettel zu React, TypeScript, Material UI, Tailwind CSS und mehr.
+- **mike_uebungen/**: Übungen und Projekte von Mike.
+- **tutor_grundlagen/**: Grundlagen des React.js-Kurses.
+- **tutor_uebungen/**: Alle Übungen des Tutoriums mit detaillierten Aufgabenstellungen und Lösungen.
 
-**Primäre Konzepte / Themen:**
+## Tutor Übungen
 
--React Vite Apps -Grundlagen in JavaScript/ES6 -Grundlagen in HTML,CSS -Grundlagen in TypeScript -Klassenkomponenten mit state -Funktionskomponenten mit use state und hooks -Serverseitige CRUD-Aufrufe todo
+Die Übungen im Ordner `tutor_uebungen` decken verschiedene Themen ab, darunter:
 
-<br>
+1. Grundlagen React.
+2. Klassenkomponenten und State.
+3. Styling und Struktur.
+4. Fortgeschrittene Themen.
+5. Abschlussprojekt.
 
-# 🛠️ Technologie-Stack
+Weitere Details finden Sie in der [README.md](tutor_uebungen/README.md) des Ordners.
 
-Chronologische Auflistung der ausgeübten Technologien:
+## Hinweise
 
-Frontend-Sprachen: HTML, CSS, JavaScript, JS ES6, TypeScript
-Frontend-Bibliotheken: React, 
-Datenbank: 
-Deployment/Infrastruktur: 
-Tooling: Visual Studio Code, npm, React mit Vite, Axios, 
+- Stellen Sie sicher, dass Sie die neueste Version von Node.js und npm installiert haben.
+- Führen Sie `npm install` aus, um alle Abhängigkeiten zu installieren.
+- Verwenden Sie `npm run dev`, um die Entwicklungsumgebung zu starten.
 
-# 🏗️ Installation (Getting Started)
+## Lizenz
 
--Installieren von Github Desktop auf Client PCs
--Online repo lokal auf den Client PC klonen
--prüfen ob auf dem Client PC nodeJS und npm installiert ist, 
- sowie ob die Systempfade alle funktionieren, gerade wenn man auch mit 
- dem Terminal arbeitet.
-
-Empfohlene Versionen:
-
-Installations Befehle auf root Ebene:
-
-Bash
-
-npm i
-npm i react-router
-npm i react react-dom
-npm i --save-dev vite@latest 
-npm i --save-dev @types/react @types/react-dom
-
-
-Bash
-
-
-# todo .env Datei
-
-
-# todo Befehle und Testing
-
-Bash
-
-npm run dev
-npm run uebung1
-
-Bash
-
-Sidenotes: Auf branching wird verzichtet, da es primär um das Synchronisieren meiner Kurs-Unterlagen und meines Codes geht.
-
-
-# 📄 Lizenz
-
-Dieses Projekt steht unter der [Name der Lizenz, z.B. MIT License].
-
-
-# CHEAT SHEET
-
-# Überschrift 1
-## Überschrift 2
-### Überschrift 3
-** fett **
-*Punkt*
-<br>
-1. Punkt
-`Code`
-bash code
-[Text](URL)
----
-
-<br>
-
-*Good documentation saves time. Bad documentation creates legends… and not the good kind.*
+Dieses Repository ist unter der MIT-Lizenz lizenziert. Weitere Informationen finden Sie in der Datei `LICENSE`.
