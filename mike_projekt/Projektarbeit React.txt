@@ -1,0 +1,19 @@
+Projektarbeit React JavaScript-Bibliothek
+
+Dauer: ca. 5 Tage
+
+Aufgabenstellung: Projektarbeit eigener Wahl auf Grundlage der erlernten Inhalte.
+Die Projektarbeit ist selbständig durchzuführen.
+
+Gewünschte Inhalte:
+
+• Komponenten
+• Two Way Data Flow
+• Formulare
+• Validierung
+• Routing
+• HTTP-Requests (optional)
+
+Speicherort:
+
+• Das Abschlussprojekt ist unter "Projektabgabe" zu speichern.
